@@ -1,25 +1,53 @@
-# Videocurriculum
-En esta página web, me conocerás más profundamente como Educadora Social, Social Developer y Diseñadora de Páginas Web.
+# Videocurrículum y Portafolio Profesional: María Carrillo Carrasco 🌟
 
-Conoceras mis valores, mi formación, mis competencias y habilidades profesionales, mi aptitud y actitud laboral, además de mis experiencias laborales y cómo se interrelacionan entre estos tres mundos.
+Este es el portafolio profesional e interactivo de **María Carrillo Carrasco**, Educadora Social, Social Developer e integradora digital. El proyecto combina un diseño moderno con un fuerte enfoque en la accesibilidad web (estándares WCAG), integrando asistencia interactiva para personas con diversidad funcional visual y auditiva.
 
-Se trata de una página web accesible, para lo cual, hemos introducido un abatar que presenta el contenido de la página web en lengua de signos y en formato de audio, además del Videocurrículum, mediante el cuál, se explican estas secciones.
+---
 
-Además, a través de mi Videocurrículum responderé a estas preguntas: ¿por qué decidí estudiar Educación Social? ¿cómo descubrí mi vocación? ¿cómo se intercala con mi experiencia personal? ¿por qué elegirme a mí frente a otro candidato? ¿por qué decidí cambiar de sector? ¿cómo se relaciona el diseño web, la educación social y la programación web? ¿qué competencias comunes a estos tres sectores son las que dispone María Carrillo Carrasco para cualquier puesto relacionado con estos sectores?
+## 🎨 Características Destacadas
 
-Podemos visualizar el listado completo de formaciones, funciones, competencias y experiencias relacionadas con estos sectores, en la sección currículums, donde podemos visualizar el currículum general que incluye la información relacionada con estas tres especialidades, tres currículums específicos: el social, el de developer y el de developer (en inglés).
+### 1. Guía Flotante Accesible (Voz y Señas)
+Un asistente de accesibilidad interactivo que incluye:
+* **Intérprete en Lengua de Signos**: Un avatar animado en formato vectorial (SVG) que gesticula de forma dinámica (`welcome`, `me`, `work`, `projects`, `contact`, `thanks`) coordinado con subtítulos en pantalla (LSE).
+* **Lectura de Texto por Voz (TTS)**: Un motor de voz integrado a través de la API Web Speech del navegador, con controles de activación síncronos para evitar bloqueos del navegador (`not-allowed`), referencias persistentes contra recolección de basura, y control seguro de eventos asíncronos residuales.
 
-También, dispone esta web, de un panel con las competencias personales, profesionales y sociales de María Carrillo Carrasco, a través de una sección, únicamente dedicada a ello.
+### 2. Tablón de Pegatinas Interactivas (Drag and Drop)
+Un espacio lúdico y altamente interactivo donde los visitantes pueden arrastrar y soltar pegatinas holográficas, de estrellas doradas o caritas felices directamente sobre el portafolio, mejorando la interacción del usuario.
 
-Podemos visualizar, a través de la sección Proyectos, aquellos más destacados. Aunque para ampliar esta formación, podemos acudir al enlace del repositorio de GitHub para poder tener más información de ellos. También, podemos visualizar los videos de otros currículums destacables, a través de sus redes sociales profesionales, instagram y facebook.
+### 3. Secciones Informativas
+* **Videocurrículum**: Reproductor personalizado para ver la presentación oficial en video.
+* **Sobre Mí y Trayectoria**: Un viaje interactivo a través del perfil profesional y formativo.
+* **Proyectos Destacados**: Tarjetas de proyectos como *AquaRed*, *Coronavirus Design* y el nuevo proyecto de *Ayuda a Domicilio*.
+* **Publicaciones de LinkedIn**: Integración de los últimos artículos y publicaciones profesionales.
+* **Agenda de Eventos**: Un calendario interactivo con las fechas clave y eventos de María.
 
-También, podemos entenender las publicaciones de Linkedin que aparecen en la propia página web.
+---
 
-Así, como, los eventos destacados a los que ha acudido María Carrillo Carrasco y que, suponen, un aprendizaje extra para ella.
+## 🛠️ Tecnologías y Recursos
 
-Para ello, hemos utilizado las siguientes tecnologías: HTML 5, CSS 3 vanilla, JavaScript y React.
+* **React.js (v18+)**: Estructura interactiva y reactividad de estados.
+* **Vite**: Entorno rápido de compilación y empaquetado.
+* **CSS3**: Estética "cyber-neon" oscura, animaciones fluidas y variables personalizadas para consistencia de diseño.
+* **Web Speech API**: Síntesis de voz nativa del navegador en español (`es-ES`).
+* **SVG Vectorial**: Animaciones nativas para los gestos y movimientos de parpadeo del avatar accesorio.
 
-Enlace a la página web: http://localhost:5173/#proyectos .
+---
 
-Creadora y trabajadora María Carrillo Carrasco
-Educadora Social, Integradora Social, Social Developer y Diseñadora de Páginas Web FactoríaF5 y UAH
+## 🚀 Cómo Ejecutar el Proyecto Localmente
+
+1. **Instalar Dependencias**:
+   ```bash
+   npm install
+   ```
+
+2. **Ejecutar el Servidor de Desarrollo**:
+   ```bash
+   npm run dev
+   ```
+   *Abre la dirección [http://localhost:5173](http://localhost:5173) en tu navegador.*
+
+3. **Compilar para Producción**:
+   ```bash
+   npm run build
+   ```
+   *Genera los archivos estáticos listos para desplegar dentro de la carpeta `/dist`.*
