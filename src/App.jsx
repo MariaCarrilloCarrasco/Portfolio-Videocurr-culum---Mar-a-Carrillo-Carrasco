@@ -248,7 +248,8 @@ export default function App() {
       category: 'Tech',
       tags: ['React', 'JavaScript', 'Gestión de Tareas'],
       icon: '📝',
-      video: 'https://www.youtube.com/embed/C0g3DbQMiuw?rel=0'
+      video: 'https://www.youtube.com/embed/C0g3DbQMiuw?rel=0',
+      link: 'https://to-do-list-gamma-smoky.vercel.app'
     }
   ];
 
