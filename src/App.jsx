@@ -127,16 +127,19 @@ export default function App() {
   // --- TRAJECTORY DATA ---
   const trajectory = {
     logros: [
-      'Graduada en Educación Social (Universidad Complutense de Madrid).',
-      'Certificado de Inserción Sociolaboral de Personas con Discapacidad.',
-      'Formación intensiva en programación web (Front-end) en Factoría F5.',
+      'Graduada en Educación Social (Centro Universitario Cardenal Cisneros).',
+      'Técnico de Grado Superior en Integración Social y C.P. Inserción Sociolaboral.',
+      'Developer Full Stack, especialista en Front-end, diseño y maquetación web (Factoría F5).',
       'Monitora cualificada de Ocio y Tiempo libre.'
     ],
     aprendizajes: [
       'Lenguajes Core: HTML5, CSS3, JavaScript (ES6).',
-      'Desarrollo interactivo con React y maquetación responsiva.',
+      'Diseño Web, maquetación responsiva y desarrollo interactivo con React.',
       'Control de versiones: Git, GitHub y flujos de trabajo en equipo.',
-      'Accesibilidad Web (WCAG) aplicada a colectivos vulnerables.'
+      'Accesibilidad Web (WCAG) aplicada a colectivos vulnerables.',
+      'Programación con Inteligencia Artificial (IA) para optimizar el desarrollo.',
+      'Diseño Asistido con Autocad 3D e Infografía Animada en 3D Studio Max.',
+      'Estrategias de monetización de talento creativo mediante el uso de IA.'
     ],
     metas: [
       'Ejercer como "Social Developer", uniendo la Educación Social y la Programación.',
@@ -250,6 +253,15 @@ export default function App() {
       icon: '📝',
       video: 'https://www.youtube.com/embed/C0g3DbQMiuw?rel=0',
       link: 'https://to-do-list-gamma-smoky.vercel.app'
+    },
+    {
+      id: 8,
+      title: 'WoM! - Watch Movies',
+      description: 'Aplicación web interactiva tipo "streaming" para descubrir, gestionar y visualizar catálogos de películas, series y eventos en distintas categorías.',
+      category: 'Tech',
+      tags: ['React', 'Vite', 'HTML5', 'CSS3', 'JavaScript'],
+      icon: '🎬',
+      link: 'https://mariacarrillocarrasco.github.io/WM---Watch-Movies/'
     }
   ];
 
@@ -1150,29 +1162,114 @@ export default function App() {
                   {/* MAIN CONTENT COL */}
                   <main className="cv-replica-main">
                     <section className="cv-main-section">
-                      <h3 className="cv-main-title">FORMACIÓN</h3>
+                      <h3 className="cv-main-title">FORMACIÓN DESTACADA</h3>
+                      
                       <div className="cv-item">
                         <div className="cv-item-header">
-                          <strong className="cv-item-bold">Grado Universitario en Educación Social</strong>
+                          <strong className="cv-item-bold">Developer Full Stack, especialista en Front-end, diseño y maquetación web</strong>
+                          <span className="cv-item-year">2026</span>
+                        </div>
+                        <p className="cv-item-inst">Factoría F5.</p>
+                      </div>
+
+                      <div className="cv-item">
+                        <div className="cv-item-header">
+                          <strong className="cv-item-bold">Programador con IA</strong>
+                          <span className="cv-item-year">2026</span>
+                        </div>
+                        <p className="cv-item-inst">Maure.</p>
+                      </div>
+
+                      <div className="cv-item">
+                        <div className="cv-item-header">
+                          <strong className="cv-item-bold">Diseño Asistido con Autocad 3D</strong>
+                          <span className="cv-item-year">2026</span>
+                        </div>
+                        <p className="cv-item-inst">Grupo Aspasia y Comunidad de Madrid.</p>
+                      </div>
+
+                      <div className="cv-item">
+                        <div className="cv-item-header">
+                          <strong className="cv-item-bold">Infografía Animada en 3D estudio max</strong>
+                          <span className="cv-item-year">2026</span>
+                        </div>
+                        <p className="cv-item-inst">Formate.</p>
+                      </div>
+
+                      <div className="cv-item">
+                        <div className="cv-item-header">
+                          <strong className="cv-item-bold">Monetiza tu talento creativo usando IA · Curso para creativos</strong>
+                          <span className="cv-item-year">2026</span>
+                        </div>
+                        <p className="cv-item-inst">Founderz y Microsoft 365.</p>
+                      </div>
+
+                      <div className="cv-item">
+                        <div className="cv-item-header">
+                          <strong className="cv-item-bold">Grado en Educación Social</strong>
                           <span className="cv-item-year">2021</span>
                         </div>
-                        <p className="cv-item-inst">UAH.</p>
+                        <p className="cv-item-inst">Centro Universitario Cardenal Cisneros (CUCC), adscrito a la Universidad de Alcalá de Henares (UAH).</p>
                       </div>
 
                       <div className="cv-item">
                         <div className="cv-item-header">
-                          <strong className="cv-item-bold">Grado Superior Integración Social</strong>
+                          <strong className="cv-item-bold">Técnico de Grado Superior en Integración Social</strong>
                           <span className="cv-item-year">2017</span>
                         </div>
-                        <p className="cv-item-inst">IES Alonso Avellaneda.</p>
+                        <p className="cv-item-inst">IES Complutense, IES Alonso de Avellaneda.</p>
                       </div>
 
                       <div className="cv-item">
                         <div className="cv-item-header">
-                          <strong className="cv-item-bold">C. P. Inserción Sociolaboral de Personas con Discapacidad</strong>
+                          <strong className="cv-item-bold">Técnico en Inserción Sociolaboral de Personas con Discapacidad</strong>
                           <span className="cv-item-year">2022</span>
                         </div>
                         <p className="cv-item-inst">Comunidad de Madrid.</p>
+                      </div>
+
+                      <div className="cv-item">
+                        <div className="cv-item-header">
+                          <strong className="cv-item-bold">Curso de (PRL) Prevención de Riesgos Laborales (nivel básico)</strong>
+                          <span className="cv-item-year">2017</span>
+                        </div>
+                        <p className="cv-item-inst">IES Complutense.</p>
+                      </div>
+
+                      <div className="cv-item">
+                        <div className="cv-item-header">
+                          <strong className="cv-item-bold">Máster en (PRL) Prevención de Riesgos Laborales</strong>
+                          <span className="cv-item-year">Pendiente</span>
+                        </div>
+                        <p className="cv-item-inst">(IMF) Instituto de Estudios Europeos Profesionales, adscrito a la (CJC) Universidad Camilo José Cela.</p>
+                      </div>
+                    </section>
+
+                    <section className="cv-main-section">
+                      <h3 className="cv-main-title">FORMACIÓN COMPLEMENTARIA</h3>
+
+                      <div className="cv-item">
+                        <div className="cv-item-header">
+                          <strong className="cv-item-bold">TICs: avances y oportunidades - Tecnologías adaptadas para personas con discapacidad</strong>
+                          <span className="cv-item-year">2017</span>
+                        </div>
+                        <p className="cv-item-inst">Ayuntamiento de Tres Cantos.</p>
+                      </div>
+
+                      <div className="cv-item">
+                        <div className="cv-item-header">
+                          <strong className="cv-item-bold">Certificado de Manipulación de alimentos</strong>
+                          <span className="cv-item-year">2022</span>
+                        </div>
+                        <p className="cv-item-inst">Asociación Henar. Grupo Asonaman.</p>
+                      </div>
+
+                      <div className="cv-item">
+                        <div className="cv-item-header">
+                          <strong className="cv-item-bold">Seminario de Cursos Interdisciplinares Prevención Violencia de Género</strong>
+                          <span className="cv-item-year">2016</span>
+                        </div>
+                        <p className="cv-item-inst">Concejalía de Igualdad. Ayuntamiento de Tres Cantos.</p>
                       </div>
 
                       <div className="cv-item">
@@ -1189,49 +1286,6 @@ export default function App() {
                           <span className="cv-item-year">2026</span>
                         </div>
                         <p className="cv-item-inst">Big School.</p>
-                      </div>
-                    </section>
-
-                    <section className="cv-main-section">
-                      <h3 className="cv-main-title">FORMACIÓN COMPLEMENTARIA</h3>
-                      <div className="cv-item">
-                        <div className="cv-item-header">
-                          <strong className="cv-item-bold">Certificado de Manipulación de alimentos</strong>
-                          <span className="cv-item-year">2022</span>
-                        </div>
-                        <p className="cv-item-inst">Asociación Henar. Grupo Asonaman.</p>
-                      </div>
-
-                      <div className="cv-item">
-                        <div className="cv-item-header">
-                          <strong className="cv-item-bold">Curso de TICs inclusión social y educativa</strong>
-                          <span className="cv-item-year">2017</span>
-                        </div>
-                        <p className="cv-item-inst">Ayuntamiento de Tres Cantos.</p>
-                      </div>
-
-                      <div className="cv-item">
-                        <div className="cv-item-header">
-                          <strong className="cv-item-bold">Seminario de Cursos Interdisciplinares Prevención Violencia de Género</strong>
-                          <span className="cv-item-year">2016</span>
-                        </div>
-                        <p className="cv-item-inst">Concejalía de Igualdad. Ayuntamiento de Tres Cantos.</p>
-                      </div>
-
-                      <div className="cv-item">
-                        <div className="cv-item-header">
-                          <strong className="cv-item-bold">Título de Prevención de Riesgos Laborales</strong>
-                          <span className="cv-item-year">2016</span>
-                        </div>
-                        <p className="cv-item-inst">Nivel básico. IES Alonso Avellaneda.</p>
-                      </div>
-
-                      <div className="cv-item">
-                        <div className="cv-item-header">
-                          <strong className="cv-item-bold">Máster en PRL</strong>
-                          <span className="cv-item-year">2023 - pend.</span>
-                        </div>
-                        <p className="cv-item-inst">Nivel superior. Universidad Camilo José Cela.</p>
                       </div>
 
                       <div className="cv-item">
@@ -1421,12 +1475,28 @@ export default function App() {
                 <div className="tech-education-focus">
                   <h4>Formación Tecnológica</h4>
                   <div className="tech-edu-item">
-                    <h5>Curso de Creación de Páginas Web — Factoría 5</h5>
+                    <h5>Developer Full Stack, especialista en Front-end, diseño y maquetación web (2026) — Factoría F5</h5>
                     <p>Bootcamp intensivo enfocado en maquetación interactiva, desarrollo de aplicaciones React, lógica JS y metodologías ágiles de trabajo en equipo.</p>
                   </div>
                   <div className="tech-edu-item">
                     <h5>Curso de Iniciación al Desarrollo con IA (2026) — Big School</h5>
                     <p>Uso práctico de APIs de IA, prompt engineering, automatizaciones y su integración en el desarrollo de software moderno.</p>
+                  </div>
+                  <div className="tech-edu-item">
+                    <h5>Programador con IA (2026) — Maure</h5>
+                    <p>Desarrollo de aplicaciones utilizando inteligencia artificial.</p>
+                  </div>
+                  <div className="tech-edu-item">
+                    <h5>Diseño Asistido con Autocad 3D (2026) — Grupo Aspasia y Comunidad de Madrid</h5>
+                    <p>Diseño y modelado tridimensional con AutoCAD.</p>
+                  </div>
+                  <div className="tech-edu-item">
+                    <h5>Infografía Animada en 3D estudio max (2026) — Formate</h5>
+                    <p>Creación de animaciones e infografías mediante 3D Studio Max.</p>
+                  </div>
+                  <div className="tech-edu-item">
+                    <h5>Monetiza tu talento creativo usando IA · Curso para creativos (2026) — Founderz y Microsoft 365</h5>
+                    <p>Uso de herramientas de IA para potenciar la creatividad y aplicarlo a proyectos innovadores.</p>
                   </div>
                 </div>
               </div>
@@ -1472,12 +1542,28 @@ export default function App() {
                 <div className="tech-education-focus">
                   <h4>Tech Education</h4>
                   <div className="tech-edu-item">
-                    <h5>Web Page Creation Course — Factoría 5</h5>
+                    <h5>Full Stack Developer, specialist in Front-end, web design and layout (2026) — Factoría F5</h5>
                     <p>Intensive bootcamp focused on interactive markup, React application development, JS logic, and agile teamwork methodologies (SCRUM).</p>
                   </div>
                   <div className="tech-edu-item">
                     <h5>Intro to AI Development (2026) — Big School</h5>
                     <p>Practical concepts on integrating language models, task automation, and developing AI-enriched interfaces.</p>
+                  </div>
+                  <div className="tech-edu-item">
+                    <h5>AI Programmer (2026) — Maure</h5>
+                    <p>Application development using Artificial Intelligence.</p>
+                  </div>
+                  <div className="tech-edu-item">
+                    <h5>Computer-Aided Design with AutoCAD 3D (2026) — Grupo Aspasia and Comunidad de Madrid</h5>
+                    <p>3D design and modeling with AutoCAD.</p>
+                  </div>
+                  <div className="tech-edu-item">
+                    <h5>Animated 3D Infographics with 3D Studio Max (2026) — Formate</h5>
+                    <p>Creation of animations and infographics using 3D Studio Max.</p>
+                  </div>
+                  <div className="tech-edu-item">
+                    <h5>Monetize Your Creative Talent Using AI · Course for Creatives (2026) — Founderz and Microsoft 365</h5>
+                    <p>Using AI tools to boost creativity and apply it to innovative projects.</p>
                   </div>
                 </div>
               </div>
@@ -1565,6 +1651,24 @@ export default function App() {
                         <p>Dinamización grupal, actividades deportivas, campamentos y talleres educativos enfocados en la educación en valores en el tiempo libre.</p>
                       </div>
                     </div>
+
+                    <div className="cert-item">
+                      <div className="cert-icon">🛡️</div>
+                      <div className="cert-details">
+                        <h4>Máster en Prevención de Riesgos Laborales (PRL)</h4>
+                        <span className="cert-meta">(IMF) Instituto de Estudios Europeos Profesionales (CJC) | Pendiente</span>
+                        <p>Especialización superior en seguridad y salud laboral aplicada a entornos de trabajo inclusivos.</p>
+                      </div>
+                    </div>
+
+                    <div className="cert-item">
+                      <div className="cert-icon">👷‍♀️</div>
+                      <div className="cert-details">
+                        <h4>Prevención de Riesgos Laborales (nivel básico)</h4>
+                        <span className="cert-meta">IES Complutense | 2017</span>
+                        <p>Gestión básica preventiva y fomento de entornos de trabajo seguros.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               )}
@@ -1605,18 +1709,9 @@ export default function App() {
                     <div className="cert-item">
                       <div className="cert-icon">💻</div>
                       <div className="cert-details">
-                        <h4>Bootcamp Frontend Web Developer</h4>
-                        <span className="cert-meta">Factoría F5 en colaboración con Microsoft | 2026</span>
+                        <h4>Developer Full Stack, especialista en Front-end, diseño y maquetación web</h4>
+                        <span className="cert-meta">Factoría F5 | 2026</span>
                         <p>Desarrollo interactivo en React.js, programación estructurada en JavaScript (ES6), Git, GitHub, flujos SCRUM y diseño responsive Mobile-First.</p>
-                      </div>
-                    </div>
-
-                    <div className="cert-item">
-                      <div className="cert-icon">🎨</div>
-                      <div className="cert-details">
-                        <h4>Curso de Creación de Páginas Web</h4>
-                        <span className="cert-meta">Factoría 5 (Madrid) | En curso</span>
-                        <p>Profundización en maquetación semántica avanzada HTML5, diseño flexible CSS Grid / Flexbox y desarrollo de componentes UI modernos.</p>
                       </div>
                     </div>
 
@@ -1626,6 +1721,33 @@ export default function App() {
                         <h4>Curso de Iniciación al Desarrollo con Inteligencia Artificial</h4>
                         <span className="cert-meta">Big School | Certificado en 2026</span>
                         <p>Conceptos prácticos sobre integración de modelos de lenguaje, automatización de tareas y desarrollo de interfaces enriquecidas con IA.</p>
+                      </div>
+                    </div>
+
+                    <div className="cert-item">
+                      <div className="cert-icon">📐</div>
+                      <div className="cert-details">
+                        <h4>Diseño Asistido con Autocad 3D</h4>
+                        <span className="cert-meta">Grupo Aspasia y Comunidad de Madrid | 2026</span>
+                        <p>Creación de planos y modelado tridimensional para proyectos técnicos y de diseño industrial.</p>
+                      </div>
+                    </div>
+
+                    <div className="cert-item">
+                      <div className="cert-icon">🎬</div>
+                      <div className="cert-details">
+                        <h4>Infografía Animada en 3D estudio max</h4>
+                        <span className="cert-meta">Formate | 2026</span>
+                        <p>Modelado, texturizado, iluminación y animación de escenas 3D fotorrealistas e interactivas.</p>
+                      </div>
+                    </div>
+
+                    <div className="cert-item">
+                      <div className="cert-icon">💡</div>
+                      <div className="cert-details">
+                        <h4>Monetiza tu talento creativo usando IA</h4>
+                        <span className="cert-meta">Founderz y Microsoft 365 | 2026</span>
+                        <p>Estrategias de monetización de talento creativo mediante el uso de IA.</p>
                       </div>
                     </div>
                   </div>
