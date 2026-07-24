@@ -1464,6 +1464,7 @@ export default function App() {
                   <div className="cv-highlight-card">
                     <h4>🚀 Experiencia & Proyectos Híbridos</h4>
                     <ul>
+                      <li><strong>Proyecto WoM! - Watch Movies</strong>: Aplicación web interactiva tipo "streaming" en React/Vite para descubrir y gestionar catálogos de películas. <a href="https://mariacarrillocarrasco.github.io/WM---Watch-Movies/" target="_blank" rel="noopener noreferrer">Ver Web de WoM!</a></li>
                       <li><strong>Proyecto Kaleidos</strong>: Plataforma de diseño web inclusiva. <a href="https://MariaCarrilloCarrasco.github.io/Kaleidos---Plataforma-de-dise-o-web-con-c-digo-abierto/" target="_blank" rel="noopener noreferrer">Ver Web de Kaleidos</a></li>
                       <li><strong>Proyecto AquaRed</strong>: Desarrollo completo en React de una herramienta web interactiva para gestión comunitaria de agua.</li>
                       <li><strong>Fem Coder (2026)</strong>: Mentora y facilitadora de proyectos con Inteligencia Artificial para jóvenes estudiantes.</li>
