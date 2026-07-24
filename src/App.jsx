@@ -1499,6 +1499,10 @@ export default function App() {
                     <h5>Monetiza tu talento creativo usando IA · Curso para creativos (2026) — Founderz y Microsoft 365</h5>
                     <p>Uso de herramientas de IA para potenciar la creatividad y aplicarlo a proyectos innovadores.</p>
                   </div>
+                  <div className="tech-edu-item">
+                    <h5>Metodologías Ágiles en Marketing para el Diseño de nuevos productos (50 horas) — Centro de formación y empleo (CCC)</h5>
+                    <p>Aplicación de metodologías ágiles enfocadas al marketing y diseño de productos.</p>
+                  </div>
                 </div>
               </div>
             )}
