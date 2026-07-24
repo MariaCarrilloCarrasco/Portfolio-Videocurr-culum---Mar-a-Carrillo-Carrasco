@@ -1503,6 +1503,10 @@ export default function App() {
                     <h5>Metodologías Ágiles en Marketing para el Diseño de nuevos productos (50 horas) — Centro de formación y empleo (CCC)</h5>
                     <p>Aplicación de metodologías ágiles enfocadas al marketing y diseño de productos.</p>
                   </div>
+                  <div className="tech-edu-item">
+                    <h5>Diseño Gráfico Publicitario VI — Grupo Aspasia</h5>
+                    <p>Formación especializada en diseño gráfico publicitario.</p>
+                  </div>
                 </div>
               </div>
             )}
