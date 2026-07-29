@@ -1507,6 +1507,10 @@ export default function App() {
                     <h5>Diseño Gráfico Publicitario VI — Grupo Aspasia</h5>
                     <p>Formación especializada en diseño gráfico publicitario.</p>
                   </div>
+                  <div className="tech-edu-item">
+                    <h5>Curso sobre Habilidades de Cuidado en el Cuidado de Personas con Demencia — Academia Alison</h5>
+                    <p>Formación en habilidades de cuidado y atención para personas con demencia.</p>
+                  </div>
                 </div>
               </div>
             )}
