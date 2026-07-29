@@ -14,19 +14,40 @@
         .animar-final { animation: fadeIn 3s ease-in-out forwards; }
         @keyframes fadeInOut { 0% { opacity: 0; transform: scale(1.05); } 20% { opacity: 1; transform: scale(1); } 80% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(0.95); } }
         @keyframes fadeIn { 0% { opacity: 0; transform: scale(0.8); } 100% { opacity: 1; transform: scale(1); } }
+        
+        #startBtn { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 100; cursor: pointer; color: white; font-size: 2rem; font-weight: bold; transition: opacity 0.5s; text-align: center; }
+        #startBtn span { font-size: 1.2rem; color: #ccc; margin-top: 15px; font-weight: normal; }
     </style>
 </head>
 <body>
+    <div id="startBtn">
+        ✨ Toca aquí para abrir tu sorpresa ✨
+        <span>(Asegúrate de tener el volumen alto)</span>
+    </div>
+    
+    <audio id="bgm" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Claude_Debussy_-_Clair_de_lune.ogg"></audio>
+
     <div id="slide1" class="slide"><img src="img/grupo1.jpg" alt="Fútbol"><div class="mensaje">Para Ivan...</div></div>
     <div id="slide2" class="slide"><img src="img/grupo2.jpg" alt="Cena"><div class="mensaje">Gracias por apoyarme siempre...</div></div>
     <div id="slide3" class="slide"><img src="img/ivan.jpg" alt="Collage"><div class="mensaje">...y darme tanto cariño.</div></div>
     <div id="slide4" class="slide"><div class="mensaje"><span class="dorado">¡Felicidades<br>Ivan!</span></div></div>
+    
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script>
-        setTimeout(() => document.getElementById('slide1').classList.add('animar'), 500);
-        setTimeout(() => document.getElementById('slide2').classList.add('animar'), 5500);
-        setTimeout(() => document.getElementById('slide3').classList.add('animar'), 10500);
-        setTimeout(() => { document.getElementById('slide4').classList.add('animar-final'); lanzarConfeti(); }, 15500);
+        document.getElementById('startBtn').addEventListener('click', function() {
+            this.style.opacity = '0';
+            setTimeout(() => this.style.display = 'none', 500);
+            
+            var audio = document.getElementById('bgm');
+            audio.volume = 0.8;
+            audio.play();
+
+            setTimeout(() => document.getElementById('slide1').classList.add('animar'), 500);
+            setTimeout(() => document.getElementById('slide2').classList.add('animar'), 5500);
+            setTimeout(() => document.getElementById('slide3').classList.add('animar'), 10500);
+            setTimeout(() => { document.getElementById('slide4').classList.add('animar-final'); lanzarConfeti(); }, 15500);
+        });
+
         function lanzarConfeti() {
             var duration = 5 * 1000; var animationEnd = Date.now() + duration; var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
             function randomInRange(min, max) { return Math.random() * (max - min) + min; }
