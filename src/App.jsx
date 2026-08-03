@@ -262,6 +262,30 @@ export default function App() {
       tags: ['React', 'Vite', 'HTML5', 'CSS3', 'JavaScript'],
       icon: '🎬',
       link: 'https://mariacarrillocarrasco.github.io/WM---Watch-Movies/'
+    },
+    {
+      id: 9,
+      title: 'Diseño de Carteles',
+      description: 'Creación de carteles promocionales modernos e impactantes para cumpleaños, eventos y negocios locales. Diseño a medida y envíos a domicilio.',
+      category: 'Mix',
+      tags: ['Diseño Gráfico', 'Marketing'],
+      image: './assets/cartel_servicios.png'
+    },
+    {
+      id: 10,
+      title: 'Diseño 3D',
+      description: 'Modelado y diseño avanzado de objetos 3D y entornos virtuales, aplicando técnicas modernas para experiencias inmersivas.',
+      category: 'Tech',
+      tags: ['CSS 3D', 'Animación', 'Diseño Web'],
+      image: './assets/3d_objects.png'
+    },
+    {
+      id: 11,
+      title: 'Felicitaciones en Vídeo',
+      description: 'Creación de vídeos interactivos en formato web con animaciones, música integrada, transiciones automáticas y confeti.',
+      category: 'Social',
+      tags: ['HTML/CSS', 'Emoción'],
+      image: './assets/video_cumple.jpg'
     }
   ];
 
@@ -1851,6 +1875,8 @@ export default function App() {
                 <div className="project-img-placeholder">
                   {project.video ? (
                     <iframe src={project.video} className="project-card-video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                  ) : project.image ? (
+                    <img src={project.image} alt={project.title} className="project-card-image" />
                   ) : (
                     project.icon
                   )}
