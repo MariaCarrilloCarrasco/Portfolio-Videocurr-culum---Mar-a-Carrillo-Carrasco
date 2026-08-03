@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Freelance | María Carrillo Carrasco</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Panel de Accesibilidad -->
+    <div class="accessibility-panel">
+        <button id="btn-contrast" aria-label="Cambiar a alto contraste" title="Alto Contraste"><i class="fas fa-adjust"></i></button>
+        <button id="btn-text-plus" aria-label="Aumentar tamaño de texto" title="Aumentar Texto"><i class="fas fa-search-plus"></i></button>
+        <button id="btn-text-minus" aria-label="Reducir tamaño de texto" title="Reducir Texto"><i class="fas fa-search-minus"></i></button>
+        <button id="btn-read" aria-label="Leer pantalla en voz alta" title="Lectura por Voz"><i class="fas fa-volume-up"></i></button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="hero-title">María Carrillo Carrasco</h1>
+        <div class="hero-roles">
+            <span class="role"><i class="fas fa-code"></i> Social Developer</span>
+            <span class="role"><i class="fas fa-hands-helping"></i> Educadora Social</span>
+            <span class="role"><i class="fas fa-laptop-code"></i> Programadora Social</span>
+            <span class="role"><i class="fas fa-paint-brush"></i> Diseñadora Web</span>
+        </div>
+        <p class="hero-subtitle">Accesibilidad, Tecnología e Inclusión a tu servicio.</p>
+    </header>
+
+    <main class="container">
+        <!-- Servicios -->
+        <section class="section" aria-labelledby="services-title">
+            <h2 id="services-title" class="section-title">Mis Servicios</h2>
+            <p class="section-desc">¿Tienes un cumpleaños, evento o negocio y quieres promocionarte o regalar algo único?</p>
+            
+            <div class="grid-services">
+                <div class="card service-card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #6366f1, #818cf8);"><i class="fas fa-globe"></i></div>
+                    <h3>Página Web Completa</h3>
+                    <p>Web inclusiva, accesible, totalmente funcional y a medida.</p>
+                    <div class="card-footer">
+                        <span><i class="far fa-clock"></i> 3 Semanas</span>
+                        <span class="price">40€</span>
+                    </div>
+                </div>
+
+                <div class="card service-card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #8b5cf6, #a78bfa);"><i class="fas fa-cube"></i></div>
+                    <h3>Diseño 3D</h3>
+                    <p>Modelado y diseño avanzado de objetos 3D y entornos virtuales inmersivos.</p>
+                    <div class="card-footer">
+                        <span><i class="far fa-clock"></i> 1 Mes</span>
+                        <span class="price">200€</span>
+                    </div>
+                </div>
+
+                <div class="card service-card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #ec4899, #f472b6);"><i class="fas fa-video"></i></div>
+                    <h3>Vídeo Especial / Interactivo</h3>
+                    <p>Vídeos emotivos e interactivos web para regalos o presentaciones.</p>
+                    <div class="card-footer">
+                        <span><i class="far fa-clock"></i> 2 Días</span>
+                        <span class="price">10€</span>
+                    </div>
+                </div>
+
+                <div class="card service-card">
+                    <div class="card-icon" style="background: linear-gradient(135deg, #0ea5e9, #38bdf8);"><i class="fas fa-file-image"></i></div>
+                    <h3>Carteles Impresos</h3>
+                    <p>Diseño a medida impreso y enviado directamente a tu domicilio.</p>
+                    <div class="card-footer">
+                        <span><i class="far fa-clock"></i> 48 Horas</span>
+                        <span class="price">5€</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="section" aria-labelledby="portfolio-title">
+            <h2 id="portfolio-title" class="section-title">Portfolio Destacado</h2>
+            <div class="grid-portfolio">
+                <!-- Carteles -->
+                <div class="card portfolio-card">
+                    <div class="portfolio-img-wrapper" id="cartel-container">
+                        <div class="simulated-cartel">
+                            <i class="fas fa-bullhorn" style="font-size: 3rem; margin-bottom:10px;"></i>
+                            <h3>Diseños Exclusivos</h3>
+                            <p>Promociona tu evento o negocio.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Diseño de Carteles Publicitarios</h3>
+                        <p>Creación de carteles modernos y vibrantes adaptados a cualquier marca o evento.</p>
+                    </div>
+                </div>
+
+                <!-- 3D -->
+                <div class="card portfolio-card">
+                    <div class="portfolio-img-wrapper">
+                        <!-- Pure CSS 3D Cube -->
+                        <div class="cube-scene">
+                            <div class="cube">
+                                <div class="face front"></div><div class="face back"></div>
+                                <div class="face right"></div><div class="face left"></div>
+                                <div class="face top"></div><div class="face bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Objetos y Entornos 3D</h3>
+                        <p>Diseño de elementos 3D interactivos, utilizando tecnologías web avanzadas.</p>
+                    </div>
+                </div>
+
+                <!-- Videos -->
+                <div class="card portfolio-card">
+                    <div class="portfolio-img-wrapper">
+                        <img src="img/video_cumple.jpg" alt="Captura final del vídeo de cumpleaños interactivo" class="portfolio-img" onerror="this.style.display='none'">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Vídeos Web Interactivos</h3>
+                        <p>Regalos inolvidables con música, transiciones, animaciones y confeti.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="section" aria-labelledby="contact-title">
+            <h2 id="contact-title" class="section-title">¡Contacta Conmigo!</h2>
+            <div class="contact-box">
+                <div class="contact-details">
+                    <a href="tel:+34657028674" class="contact-link" aria-label="Llamar al teléfono"><i class="fas fa-phone"></i> +34 657 028 674</a>
+                    <a href="mailto:mariacuario12@hotmail.es" class="contact-link" aria-label="Enviar correo a Hotmail"><i class="fas fa-envelope"></i> mariacuario12@hotmail.es</a>
+                    <a href="mailto:mariacarrillocarrasco@gmail.com" class="contact-link" aria-label="Enviar correo a Gmail"><i class="fas fa-envelope"></i> mariacarrillocarrasco@gmail.com</a>
+                    <a href="https://www.facebook.com/share/1Niu8wyHfc/" target="_blank" class="contact-link" aria-label="Visitar perfil de Facebook"><i class="fab fa-facebook"></i> Perfil Profesional en Facebook</a>
+                </div>
+                <div class="contact-qr">
+                    <img src="img/qr_instagram.jpg" alt="Código QR de mi Instagram Profesional @MC129772" class="qr-img">
+                    <span class="qr-handle">@MC129772</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 María Carrillo Carrasco. Todos los derechos reservados. | Web 100% Accesible.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
