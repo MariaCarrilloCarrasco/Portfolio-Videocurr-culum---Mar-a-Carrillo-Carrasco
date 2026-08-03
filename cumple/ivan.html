@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Ivan</title>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; background-color: #000; color: white; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
+        .slide { position: absolute; width: 100%; height: 100%; opacity: 0; display: flex; justify-content: center; align-items: center; }
+        .slide img { position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0.35; filter: blur(2px); }
+        .mensaje { font-size: 3.5rem; text-align: center; padding: 0 20px; text-shadow: 0 4px 15px rgba(0,0,0,1); z-index: 1; font-weight: bold; }
+        .dorado { color: #34d399; font-size: 6rem; text-transform: uppercase; }
+        .animar { animation: fadeInOut 5s ease-in-out forwards; }
+        .animar-final { animation: fadeIn 3s ease-in-out forwards; }
+        @keyframes fadeInOut { 0% { opacity: 0; transform: scale(1.05); } 20% { opacity: 1; transform: scale(1); } 80% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(0.95); } }
+        @keyframes fadeIn { 0% { opacity: 0; transform: scale(0.8); } 100% { opacity: 1; transform: scale(1); } }
+        #startBtn { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 100; cursor: pointer; color: white; font-size: 2rem; font-weight: bold; transition: opacity 0.5s; text-align: center; }
+        #startBtn span { font-size: 1.2rem; color: #ccc; margin-top: 15px; font-weight: normal; }
+    </style>
+</head>
+<body>
+    <div id="startBtn">
+        ✨ Toca aquí para abrir tu sorpresa ✨
+        <span>(Asegúrate de tener el volumen alto)</span>
+    </div>
+    
+    <div id="player" style="position: absolute; top: -9999px; left: -9999px;"></div>
+
+    <div id="slide1" class="slide"><img src="img/grupo1.jpg" alt="Fútbol"><div class="mensaje">Para Ivan...</div></div>
+    <div id="slide2" class="slide"><img src="img/grupo2.jpg" alt="Cena"><div class="mensaje">Gracias por apoyarme siempre...</div></div>
+    <div id="slide3" class="slide"><img src="img/ivan.jpg" alt="Collage"><div class="mensaje">...y darme tanto cariño.</div></div>
+    <div id="slide4" class="slide"><div class="mensaje"><span class="dorado">¡Felicidades<br>Ivan!</span></div></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '10', width: '10',
+                videoId: '7MAiqCAhEyw',
+                playerVars: { 'autoplay': 0, 'controls': 0, 'playsinline': 1 },
+                events: { 'onReady': function() { console.log('Player ready'); } }
+            });
+        }
+        document.getElementById('startBtn').addEventListener('click', function() {
+            this.style.opacity = '0';
+            setTimeout(() => this.style.display = 'none', 500);
+            
+            if (player && typeof player.playVideo === 'function') {
+                player.playVideo();
+            }
+
+            setTimeout(() => document.getElementById('slide1').classList.add('animar'), 500);
+            setTimeout(() => document.getElementById('slide2').classList.add('animar'), 5500);
+            setTimeout(() => document.getElementById('slide3').classList.add('animar'), 10500);
+            setTimeout(() => { document.getElementById('slide4').classList.add('animar-final'); lanzarConfeti(); }, 15500);
+        });
+
+        function lanzarConfeti() {
+            var duration = 5 * 1000; var animationEnd = Date.now() + duration; var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+            function randomInRange(min, max) { return Math.random() * (max - min) + min; }
+            var interval = setInterval(function() {
+              var timeLeft = animationEnd - Date.now();
+              if (timeLeft <= 0) return clearInterval(interval);
+              var particleCount = 50 * (timeLeft / duration);
+              confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+              confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+        }
+    </script>
+</body>
+</html>

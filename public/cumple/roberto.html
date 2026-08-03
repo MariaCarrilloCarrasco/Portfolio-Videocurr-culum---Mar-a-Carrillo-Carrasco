@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicidades Roberto</title>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; background-color: #1e293b; color: white; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
+        .slide { position: absolute; width: 100%; height: 100%; opacity: 0; display: flex; justify-content: center; align-items: center; }
+        .slide img { position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0.4; filter: blur(2px); }
+        .mensaje { font-size: 3rem; text-align: center; padding: 0 40px; text-shadow: 0 4px 15px rgba(0,0,0,1); z-index: 1; font-weight: bold; line-height: 1.3; }
+        .dorado { color: #facc15; font-size: 5rem; text-transform: uppercase; text-shadow: 0 0 20px rgba(250,204,21,0.6); }
+        .animar { animation: fadeInOut 3.5s ease-in-out forwards; }
+        .animar-final { animation: fadeIn 3s ease-in-out forwards; }
+        @keyframes fadeInOut { 0% { opacity: 0; transform: scale(1.05); } 15% { opacity: 1; transform: scale(1); } 85% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(0.95); } }
+        @keyframes fadeIn { 0% { opacity: 0; transform: scale(0.8); } 100% { opacity: 1; transform: scale(1); } }
+        #startBtn { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15,23,42,0.95); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 100; cursor: pointer; color: white; font-size: 2rem; font-weight: bold; transition: opacity 0.5s; text-align: center; padding: 0 20px; }
+        #startBtn span { font-size: 1.2rem; color: #94a3b8; margin-top: 15px; font-weight: normal; }
+    </style>
+</head>
+<body>
+    <div id="startBtn">
+        ✨ Toca aquí para abrir tu sorpresa, Roberto ✨
+        <span>(Asegúrate de tener el volumen alto)</span>
+    </div>
+    
+    <div id="player" style="position: absolute; top: -9999px; left: -9999px;"></div>
+
+    <div id="slide1" class="slide"><img src="img/roberto1.jpg" onerror="this.style.display='none'"><div class="mensaje">Felicidades Roberto (adelantadas)...</div></div>
+    <div id="slide2" class="slide"><img src="img/roberto2.jpg" onerror="this.style.display='none'"><div class="mensaje">Espero que pases un gran día.</div></div>
+    <div id="slide3" class="slide"><img src="img/roberto3.jpg" onerror="this.style.display='none'"><div class="mensaje">Gracias por sacarme siempre sonrisas...</div></div>
+    <div id="slide4" class="slide"><img src="img/roberto4.jpg" onerror="this.style.display='none'"><div class="mensaje">aunque esté mal.</div></div>
+    <div id="slide5" class="slide"><img src="img/roberto5.jpg" onerror="this.style.display='none'"><div class="mensaje">Te quiero, abuelo.</div></div>
+    
+    <div id="slide6" class="slide"><img src="img/roberto6.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide7" class="slide"><img src="img/roberto7.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide8" class="slide"><img src="img/roberto8.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide9" class="slide"><img src="img/roberto9.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide10" class="slide"><img src="img/roberto10.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide11" class="slide"><img src="img/roberto11.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide12" class="slide"><img src="img/roberto12.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide13" class="slide"><img src="img/roberto13.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide14" class="slide"><img src="img/roberto14.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide15" class="slide"><img src="img/roberto15.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide16" class="slide"><img src="img/roberto16.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide17" class="slide"><img src="img/roberto17.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide18" class="slide"><img src="img/roberto18.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide19" class="slide"><img src="img/roberto19.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide20" class="slide"><img src="img/roberto20.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide21" class="slide"><img src="img/roberto21.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide22" class="slide"><img src="img/roberto22.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide23" class="slide"><img src="img/roberto23.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide24" class="slide"><img src="img/roberto24.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide25" class="slide"><img src="img/roberto25.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide26" class="slide"><img src="img/roberto26.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide27" class="slide"><img src="img/roberto27.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide28" class="slide"><img src="img/roberto28.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide29" class="slide"><img src="img/roberto29.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide30" class="slide"><img src="img/roberto30.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide31" class="slide"><img src="img/roberto31.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide32" class="slide"><img src="img/roberto32.jpg" onerror="this.style.display='none'"></div>
+    <div id="slide33" class="slide"><img src="img/roberto33.jpg" onerror="this.style.display='none'"></div>
+    
+    <div id="slide34" class="slide"><img src="img/roberto34.jpg" onerror="this.style.display='none'"><div class="mensaje"><span class="dorado">¡Disfruta<br>mucho!</span></div></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '10', width: '10',
+                videoId: '7MAiqCAhEyw', // Clair de lune
+                playerVars: { 'autoplay': 0, 'controls': 0, 'playsinline': 1 },
+                events: { 'onReady': function() {} }
+            });
+        }
+        document.getElementById('startBtn').addEventListener('click', function() {
+            this.style.opacity = '0';
+            setTimeout(() => this.style.display = 'none', 500);
+            if (player && typeof player.playVideo === 'function') { player.playVideo(); }
+
+            var timePerSlide = 3000;
+            
+            for(let i=1; i<=33; i++) {
+                setTimeout(() => {
+                    let s = document.getElementById('slide' + i);
+                    if(s) s.classList.add('animar');
+                }, 500 + (i-1)*timePerSlide);
+            }
+            
+            setTimeout(() => { 
+                let s = document.getElementById('slide34');
+                if(s) s.classList.add('animar-final'); 
+                lanzarConfeti(); 
+            }, 500 + 33*timePerSlide);
+        });
+
+        function lanzarConfeti() {
+            var duration = 8 * 1000; var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0, colors: ['#facc15', '#60a5fa', '#ffffff'] };
+            function randomInRange(min, max) { return Math.random() * (max - min) + min; }
+            var interval = setInterval(function() {
+              var timeLeft = animationEnd - Date.now();
+              if (timeLeft <= 0) return clearInterval(interval);
+              var particleCount = 50 * (timeLeft / duration);
+              confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+              confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+        }
+    </script>
+</body>
+</html>
