@@ -286,6 +286,15 @@ export default function App() {
       category: 'Social',
       tags: ['HTML/CSS', 'Emoción'],
       image: './assets/video_cumple.jpg'
+    },
+    {
+      id: 12,
+      title: 'Vídeo Animación 3D',
+      description: 'Infografía animada creada con HTML, CSS y JavaScript que combina diseño 3D, efectos de glassmorphism y animaciones de texto dinámicas. Realizada como presentación final del curso de 3D Studio Max e Infografía Animada.',
+      category: 'Tech',
+      tags: ['HTML5', 'CSS3', 'JavaScript', '3D Studio Max', 'Infografía Animada', 'Diseño 3D'],
+      icon: '🎬',
+      video: 'https://www.youtube.com/embed/TyyrNfnRZz4?rel=0'
     }
   ];
 
