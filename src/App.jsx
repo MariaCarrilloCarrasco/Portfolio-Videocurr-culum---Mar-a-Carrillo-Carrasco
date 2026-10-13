@@ -295,6 +295,14 @@ export default function App() {
       tags: ['HTML5', 'CSS3', 'JavaScript', '3D Studio Max', 'Infografía Animada', 'Diseño 3D'],
       icon: '🎬',
       video: 'https://www.youtube.com/embed/TyyrNfnRZz4?rel=0'
+    },
+    {
+      id: 13,
+      title: 'Cronómetro de Rendimiento Escolar',
+      description: 'App web inclusiva de cronómetro de estudio basada en el método Pomodoro. Incluye modo TDAH/Menores, reconocimiento y síntesis de voz (Web Speech API), selector de objetivos por pictogramas, modo dactilológico (Lengua de Signos), soporte multilingüe (ES/EN/FR) y calendario semanal de progreso con celebraciones de confeti y aplausos al cumplir los objetivos.',
+      category: 'Social',
+      tags: ['HTML5', 'CSS3', 'JavaScript', 'Web Speech API', 'Accesibilidad', 'TDAH', 'Pomodoro', 'Inclusión'],
+      icon: '⏱️'
     }
   ];
 
